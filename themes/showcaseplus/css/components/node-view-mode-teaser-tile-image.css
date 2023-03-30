@@ -1,0 +1,42 @@
+/**
+ * @file
+ * Visual styles for Showcase+'s node in teaser tile view.
+ */
+.node--view-mode-mt-teaser-tile-image {
+  box-shadow: none;
+}
+.node--view-mode-mt-teaser-tile-image .caption-wrapper {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 145px;
+  top: 50%;
+  margin-top: -67.5px;
+  z-index: 10;
+}
+.node--view-mode-mt-teaser-tile-image .teaser-tile-image-caption-top {
+  font-size: 14px;
+  width: 100%;
+  left: 0;
+}
+.node--view-mode-mt-teaser-tile-image .teaser-tile-image-caption-top h4 {
+  font-size: 14px;
+}
+.node--view-mode-mt-teaser-tile-image .teaser-tile-image-caption-bottom {
+  font-size: 14px;
+  width: 100%;
+  left: 0;
+}
+.node--view-mode-mt-teaser-tile-image .field--entity-reference-target-type-taxonomy-term .field__item a,
+.region--accent-background .node--view-mode-mt-teaser-tile-image .field--entity-reference-target-type-taxonomy-term.field__item a {
+  font-size: 14px;
+  background-color: transparent;
+}
+.node--view-mode-mt-teaser-tile-image .overlay--colored {
+  background-color: hsla(var(--mt-color-primary-dark-value), 0.5);
+  z-index: 1;
+  opacity: 0;
+}
+.node--view-mode-mt-teaser-tile-image:hover .overlay--colored {
+  opacity: 1;
+}

@@ -1,0 +1,325 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+      css/base/elements.css: { weight: 1 }
+      css/base/layout.css: { weight: 100 }
+    component:
+      css/components/accordion.css: {}
+      css/components/buttons.css: {}
+      css/components/subscribe-forms.css: {}
+      css/components/site-branding.css: {}
+      css/components/menu.css: {}
+      css/components/commerce.css: {}
+      css/components/image-overlay.css: {}
+      css/components/node.css: {}
+      css/components/block.css: {}
+      css/components/tables.css: {}
+      css/components/tabs.css: {}
+      css/components/forms.css: {}
+      css/components/search.css: {}
+      css/components/pills.css: {}
+      css/components/progress-bars.css: {}
+      css/components/field-taxonomy-term.css: {}
+      css/components/view-filters.css: {}
+      css/components/views.css: {}
+    theme:
+      css/theme/button-shapes.css: { weight: 100 }
+      css/theme/menu-shapes.css: { weight: 100 }
+      css/theme/form-shapes.css: { weight: 100 }
+
+local-stylesheets:
+  version: VERSION
+  css:
+    base:
+      css/base/local-base.css: { weight: 100 }
+    component:
+      css/components/local-components.css: { weight: 100 }
+    theme:
+      css/theme/local-theme.css: { weight: 150 }
+
+fixed-header:
+  version: VERSION
+  css:
+    component:
+      css/components/fixed-header.css: {}
+
+mt-sticky-element-header:
+  version: VERSION
+  css:
+    component:
+      css/components/mt-sticky-element-header.css: {}
+
+node-view-mode-teaser-tile:
+  version: VERSION
+  css:
+    component:
+      css/components/node-view-mode-teaser-tile.css: { weight: 90 }
+
+node-view-mode-teaser-tile-image:
+  version: VERSION
+  css:
+    component:
+      css/components/node-view-mode-teaser-tile-image.css: { weight: 90 }
+
+node-view-mode-featured-teaser:
+  version: VERSION
+  css:
+    component:
+      css/components/node-view-mode-featured-teaser.css: { weight: 90 }
+
+commerce-product:
+  version: VERSION
+  css:
+    component:
+      css/components/commerce-product.css: { weight: 90 }
+
+breadcrumb:
+  version: VERSION
+  css:
+    component:
+      css/components/breadcrumb.css: {}
+
+hero-v2-block:
+  version: VERSION
+  css:
+    component:
+      css/components/hero-v2-block.css: { weight: 90 }
+
+hero-form-block:
+  version: VERSION
+  css:
+    component:
+      css/components/hero-form-block.css: { weight: 90 }
+
+to-top:
+  version: VERSION
+  css:
+    component:
+      css/components/to-top.css: {}
+
+modal-block:
+  version: VERSION
+  css:
+    component:
+      css/components/modal-block.css: {}
+
+node-service:
+  version: VERSION
+  css:
+    component:
+      css/components/node-service.css: { weight: 90 }
+
+node-showcase:
+  version: VERSION
+  css:
+    component:
+      css/components/node-showcase.css: { weight: 90 }
+
+node-post:
+  version: VERSION
+  css:
+    component:
+      css/components/node-post.css: { weight: 90 }
+
+highlight:
+  version: VERSION
+  css:
+    component:
+      css/components/highlight.css: {}
+
+highlight-figures:
+  version: VERSION
+  css:
+    component:
+      css/components/highlight-figures.css: { weight: 90 }
+
+featured-linked-text-tiles-block:
+  version: VERSION
+  css:
+    component:
+      css/components/featured-linked-text-tiles-block.css: {}
+
+view-pricing-tables:
+  version: VERSION
+  css:
+    component:
+      css/components/view-pricing-tables.css: {}
+
+banner-background-image:
+  version: VERSION
+  css:
+    component:
+      css/components/banner-background-image.css: {}
+
+pager:
+  version: VERSION
+  css:
+    component:
+      css/components/pager.css: {}
+
+facets:
+  version: VERSION
+  css:
+    component:
+      css/components/facets.css: { weight: 90 }
+
+comments:
+  version: VERSION
+  css:
+    component:
+      css/components/comments.css: { weight: 90 }
+
+comment:
+  version: VERSION
+  css:
+    component:
+      css/components/comment.css: { weight: 90 }
+
+owl-carousel-global:
+  version: VERSION
+  css:
+    component:
+      css/components/owl-carousel-global.css: { weight: 90 }
+  dependencies:
+    - baseplus/owl-carousel
+    - core/drupal
+    - core/once
+
+owl-carousel-testimonials-init:
+  version: VERSION
+  css:
+    component:
+      css/components/view-testimonials-carousel.css: { weight: 90 }
+  dependencies:
+    - showcaseplus/owl-carousel-global
+
+banner:
+  version: VERSION
+  css:
+    component:
+      css/components/banner.css: { weight: 90 }
+
+#####################
+#   Color Schemes   #
+#####################
+base-color:
+  version: VERSION
+  css:
+    theme:
+      css/theme/base-color.css: { weight: 90 }
+
+color-blue:
+  version: VERSION
+  css:
+    theme:
+      css/theme/color-blue.css: { weight: 100 }
+  dependencies:
+    - showcaseplus/base-color
+    - baseplus/base-color
+
+color-gold:
+  version: VERSION
+  css:
+    theme:
+      css/theme/color-gold.css: { weight: 100 }
+  dependencies:
+    - showcaseplus/base-color
+    - baseplus/base-color
+
+color-gray:
+  version: VERSION
+  css:
+    theme:
+      css/theme/color-gray.css: { weight: 100 }
+  dependencies:
+    - showcaseplus/base-color
+    - baseplus/base-color
+
+color-green:
+  version: VERSION
+  css:
+    theme:
+      css/theme/color-green.css: { weight: 100 }
+  dependencies:
+    - showcaseplus/base-color
+    - baseplus/base-color
+
+color-khaki:
+  version: VERSION
+  css:
+    theme:
+      css/theme/color-khaki.css: { weight: 100 }
+  dependencies:
+    - showcaseplus/base-color
+    - baseplus/base-color
+
+color-lime:
+  version: VERSION
+  css:
+    theme:
+      css/theme/color-lime.css: { weight: 100 }
+  dependencies:
+    - showcaseplus/base-color
+    - baseplus/base-color
+
+color-night-blue:
+  version: VERSION
+  css:
+    theme:
+      css/theme/color-night-blue.css: { weight: 100 }
+  dependencies:
+    - showcaseplus/base-color
+    - baseplus/base-color
+
+color-orange:
+  version: VERSION
+  css:
+    theme:
+      css/theme/color-orange.css: { weight: 100 }
+  dependencies:
+    - showcaseplus/base-color
+    - baseplus/base-color
+
+color-pink:
+  version: VERSION
+  css:
+    theme:
+      css/theme/color-pink.css: { weight: 100 }
+  dependencies:
+    - showcaseplus/base-color
+    - baseplus/base-color
+
+color-purple:
+  version: VERSION
+  css:
+    theme:
+      css/theme/color-purple.css: { weight: 100 }
+  dependencies:
+    - showcaseplus/base-color
+    - baseplus/base-color
+
+color-red:
+  version: VERSION
+  css:
+    theme:
+      css/theme/color-red.css: { weight: 100 }
+  dependencies:
+    - showcaseplus/base-color
+    - baseplus/base-color
+
+color-local:
+  version: VERSION
+  css:
+    theme:
+      css/theme/color-local.css: { weight: 100 }
+  dependencies:
+    - showcaseplus/base-color
+    - baseplus/base-color
+
+custom-threejs:
+  version: VERSION
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js: { type: external }
+    https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js: { type: external }
+    threejs/index.js: {}

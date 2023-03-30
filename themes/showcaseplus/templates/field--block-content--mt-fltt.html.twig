@@ -1,0 +1,12 @@
+{#
+/**
+ * @file
+ * Base+'s theme override for the block entity refernece field for the tabs powered custom block
+ *
+ * @see baseplus_preprocess_field__block_content__mt_fancy_linked_images_block()
+ */
+#}
+{% extends "@baseplus/field--block-content--mt-fltt.html.twig" %}
+{% block libraries %}
+{{ attach_library('showcaseplus/featured-linked-text-tiles-block') }}
+{% endblock %}

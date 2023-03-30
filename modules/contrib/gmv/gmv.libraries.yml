@@ -1,0 +1,5 @@
+gmv_files:
+  header: true
+  version: VERSION
+  js: 
+    https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js: { type: external, minified: true, attributes: { type: module } }

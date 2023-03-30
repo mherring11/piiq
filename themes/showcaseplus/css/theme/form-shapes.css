@@ -1,0 +1,73 @@
+/**
+ * @file
+ * Styles for Base+'s buttons.
+ */
+:root {
+  --mt-table-rounded-radius: 10px;
+}
+.mt-style-sharp table,
+.mt-style-sharp .table-responsive {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.mt-style-sharp table tbody tr:last-child th:first-child {
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.mt-style-oval table tbody tr:last-child th:first-child {
+  -webkit-border-bottom-left-radius: var(--mt-table-rounded-radius);
+  -moz-border-bottom-left-radius: var(--mt-table-rounded-radius);
+  border-bottom-left-radius: var(--mt-table-rounded-radius);
+}
+.mt-style-oval table,
+.mt-style-oval .table-responsive {
+  -webkit-border-radius: var(--mt-table-rounded-radius);
+  -moz-border-radius: var(--mt-table-rounded-radius);
+  border-radius: var(--mt-table-rounded-radius);
+}
+.mt-style-rounded table,
+.mt-style-rounded .table-responsive {
+  -webkit-border-radius: var(--mt-table-rounded-radius);
+  -moz-border-radius: var(--mt-table-rounded-radius);
+  border-radius: var(--mt-table-rounded-radius);
+}
+.mt-style-rounded table tbody tr:last-child th:first-child {
+  -webkit-border-bottom-left-radius: var(--mt-table-rounded-radius);
+  -moz-border-bottom-left-radius: var(--mt-table-rounded-radius);
+  border-bottom-left-radius: var(--mt-table-rounded-radius);
+}
+.mt-style-form-sharp table,
+.mt-style-form-sharp .table-responsive {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.mt-style-form-sharp table tbody tr:last-child th:first-child {
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.mt-style-form-oval table tbody tr:last-child th:first-child {
+  -webkit-border-bottom-left-radius: var(--mt-table-rounded-radius);
+  -moz-border-bottom-left-radius: var(--mt-table-rounded-radius);
+  border-bottom-left-radius: var(--mt-table-rounded-radius);
+}
+.mt-style-form-oval table,
+.mt-style-form-oval .table-responsive {
+  -webkit-border-radius: var(--mt-table-rounded-radius);
+  -moz-border-radius: var(--mt-table-rounded-radius);
+  border-radius: var(--mt-table-rounded-radius);
+}
+.mt-style-form-rounded table,
+.mt-style-form-rounded .table-responsive {
+  -webkit-border-radius: var(--mt-table-rounded-radius);
+  -moz-border-radius: var(--mt-table-rounded-radius);
+  border-radius: var(--mt-table-rounded-radius);
+}
+.mt-style-form-rounded table tbody tr:last-child th:first-child {
+  -webkit-border-bottom-left-radius: var(--mt-table-rounded-radius);
+  -moz-border-bottom-left-radius: var(--mt-table-rounded-radius);
+  border-bottom-left-radius: var(--mt-table-rounded-radius);
+}

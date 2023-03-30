@@ -1,0 +1,10 @@
+/**
+ * @file
+ * Visual styles for the site branding block in Showcase+.
+ */
+.site-name a {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+}

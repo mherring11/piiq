@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Base+'s theme implementation to display a Post node.
+ */
+#}
+
+{% extends "@baseplus/node--mt-post.html.twig" %}
+{% block content %}
+  {{ attach_library('showcaseplus/node-post') }}
+  {{ attach_library('baseplus/node-post') }}
+  {% if content|without('field_mt_pst_comment', 'links', 'field_mt_pst_banner_image', 'field_mt_pst_category')|render %}
+    <div class="node__main-content-section">
+      {{ content|without('field_mt_pst_comment', 'links', 'field_mt_pst_banner_image', 'field_mt_pst_category') }}
+    </div>
+  {% endif %}
+  {{ content.links }}
+  {{ content.field_mt_pst_comment }}
+{% endblock %}

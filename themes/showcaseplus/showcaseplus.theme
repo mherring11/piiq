@@ -1,0 +1,111 @@
+<?php
+/**
+ * @file
+ * Functions to support theming in the Showcase+ theme.
+ */
+
+use Drupal\Core\Theme\ThemeSettings;
+
+/**
+ * Implements hook_preprocess_HOOK() for HTML document templates.
+ *
+ * Adds body classes if certain regions have content.
+ */
+function showcaseplus_preprocess_html(&$variables) {
+  $color_scheme_library = 'showcaseplus/color-'.theme_get_setting('color_scheme');
+  $variables['#attached']['library'][] = $color_scheme_library;
+  $variables['attributes']['class'][] = 'mt-color-scheme-' . theme_get_setting('color_scheme');
+
+  //Load fixed-header library
+  $fixed_header = theme_get_setting('fixed_header');
+  if ($fixed_header) {
+    $variables['#attached']['library'][] = 'showcaseplus/fixed-header';
+  }
+}
+
+function showcaseplus_preprocess_page(&$variables) {
+  $variables['#attached']['library'][] = 'showcaseplus/custom-threejs';
+  //Load to-top library
+  $variables['scroll_to_top_display'] = theme_get_setting('scroll_to_top_display');
+  if ($variables['scroll_to_top_display']) {
+    $variables['#attached']['library'][] = 'showcaseplus/to-top';
+    $variables['scroll_to_top_icon'] = theme_get_setting('scroll_to_top_icon');
+  }
+
+  if (!isset($variables['node'])){
+    $view_id = \Drupal::routeMatch()->getParameter('view_id');
+  }
+
+  // Override banner  region typography in specific pages
+  $banner_view_ids = [
+    'mt_services',
+    'mt_services_list',
+    'mt_services_metro_tiles',
+    'mt_products',
+    'mt_products_list',
+    'mt_products_metro_tiles',
+    'mt_showcases_grid',
+    'mt_showcases_list',
+    'mt_showcases_metro_tiles',
+    'mt_posts_grid',
+    'mt_posts_images',
+    'mt_posts_list',
+    'mt_posts_metro_tiles',
+    'mt_albums',
+    'mt_albums_list',
+    'mt_albums_metro_tiles',
+    'mt_isotope',
+  ];
+
+  if (!empty($view_id) && (in_array($view_id, $banner_view_ids))) {
+    $variables['hero_top_background_color'] = 'region--dark-background';
+    $variables['#attached']['library'][] = 'showcaseplus/banner-background-image';
+  }
+
+}
+
+function showcaseplus_preprocess_page__product(&$variables) {
+  $variables['#attached']['library'][] = 'showcaseplus/mt-sticky-element-header';
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for paragraph--mt-highlight.html.twig
+ */
+function showcaseplus_preprocess_paragraph__mt_highlight(&$variables) {
+  $variables['#attached']['library'][] = 'showcaseplus/highlight';
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for paragraph--mt-highlight--mt-teaser.html.twig
+ */
+function showcaseplus_preprocess_paragraph__mt_highlight__mt_teaser(&$variables) {
+  $variables['#attached']['library'][] = 'showcaseplus/highlight';
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for paragraph--mt-highlight--mt-teaser-tile.html.twig
+ */
+function showcaseplus_preprocess_paragraph__mt_highlight__mt_teaser_tile(&$variables) {
+  $variables['#attached']['library'][] = 'showcaseplus/highlight';
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for pricing tables.
+ */
+function showcaseplus_preprocess_views_view_list__mt_pricing_tables(&$variables) {
+  $variables['#attached']['library'][] = 'showcaseplus/view-pricing-tables';
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for pager.html.twig.
+ */
+function showcaseplus_preprocess_pager(&$variables) {
+  $variables['#attached']['library'][] = 'showcaseplus/pager';
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for testimonials carousel views.
+ */
+function showcaseplus_preprocess_views_view_list__mt_testimonials_carousel(&$variables) {
+  $variables['#attached']['library'][] = 'showcaseplus/owl-carousel-testimonials-init';
+}

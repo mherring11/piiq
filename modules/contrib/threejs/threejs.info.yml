@@ -1,0 +1,13 @@
+name: Three.js
+type: module
+description: Integration three.js library to display WebGL media data
+package: WebGL
+configure: threejs.settings_form
+core_version_requirement: ^8.8 || ^9 | ^10
+# project: 'threejs'
+
+# Information added by Drupal.org packaging script on 2023-02-06
+version: '1.0.4'
+project: 'threejs'
+datestamp: 1675692577
+

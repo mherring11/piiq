@@ -1,0 +1,21 @@
+/**
+ * @file
+ * Visual styles for Showcase+'s views.
+ */
+
+/* exposed filters */
+.view-filters [type="checkbox"]:not(:checked) + label:after {
+  border-color: rgba(var(--mt-color-base-value), 0.4);
+  background-color: transparent;
+}
+.view-filters [type="checkbox"]:checked + label:after,
+.view-filters [type="checkbox"]:hover + label:after {
+  border-color: rgba(var(--mt-color-base-value), 0.4);
+  background-color: var(--mt-color-primary);
+}
+.view-filters [type="checkbox"]:checked + label:before {
+  border-color: transparent rgba(var(--mt-color-base-contrast-value), 1) rgba(var(--mt-color-base-contrast-value), 1) transparent;
+}
+.view-content .row.list-unstyled.mb-4 {
+  margin-bottom: 0 !important;
+}

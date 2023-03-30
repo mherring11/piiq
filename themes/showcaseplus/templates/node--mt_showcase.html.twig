@@ -1,0 +1,13 @@
+{#
+/**
+ * @file
+ * Top+s's theme implementation to display a Showcase node.
+ */
+#}
+
+{% extends "@baseplus/node--mt_showcase.html.twig" %}
+{% block content %}
+  {{ attach_library('baseplus/node-showcase') }}
+  {{ attach_library('showcaseplus/node-showcase') }}
+  {{ content|without('field_mt_shw_banner_image') }}
+{% endblock %}

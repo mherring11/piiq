@@ -1,0 +1,12 @@
+name: 'Google Model Viewer'
+type: module
+description: 'Easily display interactive 3D models on the web'
+package: Field types
+core_version_requirement: ^8 || ^9
+dependencies:
+  - drupal:file
+ 
+# Information added by Drupal.org packaging script on 2023-01-03
+version: '1.0.0-alpha4'
+project: 'gmv'
+datestamp: 1672724829

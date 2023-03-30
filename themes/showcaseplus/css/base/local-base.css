@@ -1,0 +1,15 @@
+/**
+ * @file
+ * Use this CSS file to override base CSS rules
+ */
+
+/* Set default font weight to 300 for better typography in high-density screens */
+/*body {
+  font-weight: 300;
+}*/
+
+#three3d {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}

@@ -1,0 +1,8 @@
+/**
+ * @file
+ * Visual styles for Showcase+'s showcase content type.
+ */
+.page-node-type-mt-showcase .internal-banner-container .mt-submitted-info > .row > .col-12 {
+  justify-content: center;
+  display: flex;
+}

@@ -1,0 +1,16 @@
+/**
+ * @file
+ * Styles for Showcase+'s buttons.
+ */
+.mt-style-sharp,
+:root .mt-style-button-sharp {
+  --mt-button-to-top-border-radius: 0;
+}
+.mt-style-oval,
+:root .mt-style-button-oval {
+  --mt-button-to-top-border-radius: 100px;
+}
+.mt-style-rounded,
+:root .mt-style-button-rounded {
+  --mt-button-to-top-border-radius: 100px;
+}

@@ -1,0 +1,39 @@
+/**
+ * @file
+ * Visual styles for Showcase+'s commerce product content type.
+ */
+/* banner */
+.internal-banner-container .page-title {
+  font-size: 50px;
+  font-weight: 300;
+}
+.internal-banner-container + .hero-top {
+  min-height: auto;
+}
+.internal-banner-container + .hero-top .page-title {
+  display: none;
+}
+.product-content .field--entity-reference-target-type-taxonomy-term {
+  vertical-align: top;
+}
+.product-content .field--entity-reference-target-type-taxonomy-term + .field--entity-reference-target-type-taxonomy-term {
+  padding-left: 0;
+}
+.product-content .field__label,
+.product-content .field--name-field-mt-fg-group-title.field {
+  font-weight: 300;
+  font-size: 24px;
+}
+.product-content .flag-anon-message > span {
+  padding: 12px 33px;
+}
+@media (max-width: 767px) {
+  .product-content .field--entity-reference-target-type-taxonomy-term {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .product-content .field--entity-reference-target-type-taxonomy-term a {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

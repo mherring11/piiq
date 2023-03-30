@@ -1,0 +1,65 @@
+/**
+ * @file
+ * Visual styles for Showcase+'s images overlay.
+ */
+.overlay-inner {
+  z-index: 100;
+}
+.overlay-icon:hover,
+.overlay-icon:focus {
+  background-color: transparent;
+}
+.overlay-icon--button {
+  font-size: 15px;
+  width: 70px;
+  height: 70px;
+  margin: 0 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.1);
+  line-height: 60px;
+  background-color: transparent;
+  box-shadow: none;
+}
+.overlay-icon--button:hover {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+.overlay-icon--button .svg-inline--fa {
+  color: #ffffff;
+}
+.overlay-container:hover .overlay-icon--button {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.node--view-mode-full .overlay-inner {
+  z-index: 0;
+}
+.node--view-mode-full .overlay-container:hover .overlay-icon--button {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+.footer__section .overlay-icon--button,
+.sidebar__section .overlay-icon--button  {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 23px;
+  border-width: 3px;
+}
+.footer__section .overlay-icon--button .svg-inline--fa,
+.sidebar__section .overlay-icon--button .svg-inline--fa {
+  font-size: 10px;
+  line-height: 26px;
+  width: 24px;
+}
+.footer__section .overlay-inner,
+.sidebar__section .overlay-inner {
+  margin-top: -15px;
+}
+.node--view-mode-mt-metro-tile .overlay-inner {
+  display: none;
+}
+.node--view-mode-mt-teaser-tile-image .overlay-inner {
+  display: none;
+}

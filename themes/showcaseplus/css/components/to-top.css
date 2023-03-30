@@ -1,0 +1,51 @@
+/**
+ * @file
+ * Visual styles for Showcase+'s scroll to top button.
+ */
+.to-top-container {
+  height: 0;
+  position: relative;
+}
+.to-top.to-top--static,
+.page-container-border-enabled .to-top.to-top--static {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -30px;
+  background-color: #ffffff;
+  line-height: 60px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  text-align: center;
+  z-index: 10;
+  -webkit-box-shadow: 0 5px 10px 2px rgb(0 0 0 / 20%);
+  -moz-box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px 2px rgb(0 0 0 / 20%);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.to-top.to-top--static .svg-inline--fa {
+  font-size: 20px;
+  color: var(--mt-color-primary-dark);
+}
+.to-top.to-top--static:hover {
+  cursor: pointer;
+  -webkit-box-shadow: rgb(28 56 72 / 10%) 0px 2px 2px, rgb(28 56 72 / 10%) 0px 4px 4px, rgb(28 56 72 / 10%) 0px 8px 8px, rgb(28 56 72 / 10%) 0px 16px 16px, rgb(28 56 72 / 10%) 0px 32px 32px, rgb(28 56 72 / 10%) 0px 64px 64px;
+  -moz-box-shadow: rgba(28, 56, 72, 0.1) 0px 2px 2px, rgba(28, 56, 72, 0.1) 0px 4px 4px, rgba(28, 56, 72, 0.1) 0px 8px 8px, rgba(28, 56, 72, 0.1) 0px 16px 16px, rgba(28, 56, 72, 0.1) 0px 32px 32px, rgba(28, 56, 72, 0.1) 0px 64px 64px;
+  -ms-box-shadow: rgba(28, 56, 72, 0.1) 0px 2px 2px, rgba(28, 56, 72, 0.1) 0px 4px 4px, rgba(28, 56, 72, 0.1) 0px 8px 8px, rgba(28, 56, 72, 0.1) 0px 16px 16px, rgba(28, 56, 72, 0.1) 0px 32px 32px, rgba(28, 56, 72, 0.1) 0px 64px 64px;
+  -o-box-shadow: rgba(28, 56, 72, 0.1) 0px 2px 2px, rgba(28, 56, 72, 0.1) 0px 4px 4px, rgba(28, 56, 72, 0.1) 0px 8px 8px, rgba(28, 56, 72, 0.1) 0px 16px 16px, rgba(28, 56, 72, 0.1) 0px 32px 32px, rgba(28, 56, 72, 0.1) 0px 64px 64px;
+  box-shadow: rgb(28 56 72 / 10%) 0px 2px 2px, rgb(28 56 72 / 10%) 0px 4px 4px, rgb(28 56 72 / 10%) 0px 8px 8px, rgb(28 56 72 / 10%) 0px 16px 16px, rgb(28 56 72 / 10%) 0px 32px 32px, rgb(28 56 72 / 10%) 0px 64px 64px;
+}
+@media (min-width: 992px) {
+  .to-top .svg-inline--fa {
+    padding: 19px;
+  }
+}

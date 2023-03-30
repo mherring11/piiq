@@ -1,0 +1,29 @@
+/**
+ * @file
+ * Visual styles for Showcase+'s layout.
+ */
+
+.header-container {
+  -webkit-box-shadow: 0px 1px 5px rgb(0 0 0 / 5%);
+  box-shadow: 0px 1px 5px rgb(0 0 0 / 5%);
+}
+.header-container .header.region--tint-background,
+.header-container .header-top.region--tint-background,
+.header-container .header-top-highlighted.region--tint-background {
+  background-color: #f1f1f1;
+}
+.page-container-border-enabled .header-container:not(.js-transparent-header) .header-top-highlighted.region--colored-background {
+  margin-top: -10px;
+}
+.page-container-border-enabled .header-container:not(.js-transparent-header) .region--colored-background .header-top-highlighted__container {
+  padding: 0 0 5px;
+}
+.header-top-highlighted__section {
+  font-size: 13px;
+}
+.hero-top__section {
+  text-align: center;
+}
+.subfooter {
+  font-size: 13px;
+}

@@ -1,0 +1,31 @@
+/**
+ * @file
+ * Visual styles for Showcase+'s highlight figures.
+ */
+.mt-highlight-figure {
+  padding: 70px 0;
+}
+.mt-highlight-figure .highlight-figure__label {
+  font-size: 14px;
+  max-width: 100%;
+}
+.mt-highlight-figure .highlight-figure__figure {
+  font-weight: 400;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.highlight-figures-wrapper .row > .field__item:before {
+  background-color: rgba(var(--mt-color-base-value), 0.1);
+}
+@media (min-width: 768px) {
+  .highlight-figures-wrapper .row > .four-columns:before {
+    height: 70%;
+    top: 15%;
+    margin-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .mt-highlight-figure {
+    padding: 30px 0;
+  }
+}

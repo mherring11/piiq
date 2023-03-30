@@ -1,0 +1,33 @@
+/**
+ * @file
+ * Visual styles for Showcase+'s post content type.
+ */
+.page-node-type-mt-post .internal-banner-container .internal-banner__meta {
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.page-node-type-mt-post .internal-banner-container .field--entity-reference-target-type-taxonomy-term .field__item,
+.page-node-type-mt-post .internal-banner-container .field--entity-reference-target-type-taxonomy-term.field__item {
+  margin: 5px 7px 5px 0;
+}
+.page-node-type-mt-post .internal-banner-container .field--entity-reference-target-type-taxonomy-term .field__item a,
+.page-node-type-mt-post .internal-banner-container .field--entity-reference-target-type-taxonomy-term.field__item a {
+  padding: 0;
+  background-color: transparent;
+  color: var(--mt-link-color);
+  font-size: 16px;
+}
+.page-node-type-mt-post .internal-banner-container .field--entity-reference-target-type-taxonomy-term.field--label-hidden:before,
+.page-node-type-mt-post .internal-banner-container .field--entity-reference-target-type-taxonomy-term.field--label-hidden.field__item:before {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  height: 100%;
+  font-size: 13px;
+}
+.internal-banner__meta-separator {
+  display: none;
+}

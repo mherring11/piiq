@@ -1,0 +1,13 @@
+name: Three.js Fields
+type: module
+description: Provide a fields type for displaying Web GL media contents
+core_version_requirement: ^9 || ^10
+package: WebGL
+dependencies:
+  - drupal:threejs
+  - drupal:field
+
+# Information added by Drupal.org packaging script on 2023-02-06
+version: '1.0.4'
+project: 'threejs'
+datestamp: 1675692577

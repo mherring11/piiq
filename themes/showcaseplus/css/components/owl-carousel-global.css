@@ -1,0 +1,56 @@
+/**
+ * @file
+ * Visual styles for Showcase+'s owl carousels.
+ */
+
+/* Styling pager */
+.owl-carousel .owl-dots {
+  margin-top: 50px;
+}
+.owl-carousel .owl-dot span {
+  width: 13px;
+  height: 13px;
+  margin: 5px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background-color: transparent;
+}
+
+/*pager at colored regions*/
+.region--default-background .owl-carousel .owl-dot span {
+  border-color: rgba(var(---mt-color-base-value), 0.3);
+  background-color: transparent;
+}
+.region--bright-background .owl-carousel .owl-dot span {
+  border-color: rgba(var(--mt-color-base-value), 0.3);
+  background-color: transparent;
+}
+.region--pattern .owl-carousel .owl-dot span {
+  border-color: rgba(var(--mt-color-base-value), 0.3);
+  background-color: transparent;
+}
+.region--accent-background .owl-carousel .owl-dot span {
+  border-color: rgba(var(--mt-color-base-value), 0.3);
+  background-color: transparent;
+}
+.region--tint-background .owl-carousel .owl-dot span {
+  border-color: rgba(var(--mt-color-base-value), 0.3);
+  background-color: transparent;
+}
+.region--shade-background .owl-carousel .owl-dot span {
+  border-color: rgba(var(--mt-color-base-contrast-value), 0.3);
+  background-color: transparent;
+}
+.region--colored-background .owl-carousel .owl-dot span {
+  border-color: rgba(var(--mt-color-base-contrast-value), 0.3);
+  background-color: transparent;
+}
+.region--dark-colored-background .owl-carousel .owl-dot span {
+  border-color: rgba(var(--mt-color-base-contrast-value), 0.3);
+  background-color: transparent;
+}
+.region--dark-background .owl-carousel .owl-dot span {
+  border-color: rgba(var(--mt-color-base-contrast-value), 0.3);
+  background-color: transparent;
+}

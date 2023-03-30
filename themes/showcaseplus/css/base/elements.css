@@ -1,0 +1,188 @@
+/*
+ * @file
+ * Overall specifications for Showcase+.
+ */
+:root {
+  --mt-text-size: 15px;
+  --mt-modular-ratio: 1.27;
+}
+
+/* body */
+p.large {
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+}
+p.highlighted {
+  background-color: #f4f4f4;
+  display: inline-block;
+  padding: 10px 40px;
+  margin-bottom: 45px;
+  border-radius: 50px;
+  font-size: 16px;
+}
+.region--tint-background p.highlighted {
+  background-color: #ffffff;
+}
+.region--colored-background p.highlighted,
+.region--dark-colored-background p.highlighted,
+.region--shade-background p.highlighted,
+.region--dark-background p.highlighted {
+  background-color:rgba(255, 255, 255, 0.2);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+h2 {
+  font-size: calc(
+    (
+        (
+            (var(--mt-text-size) * var(--mt-modular-ratio)) *
+              var(--mt-modular-ratio)
+          ) * var(--mt-modular-ratio)
+      ) * 1.15
+  );
+}
+h4 {
+  font-size: calc(
+    ((var(--mt-text-size) * var(--mt-modular-ratio)) * var(--mt-modular-ratio)) *
+      1.075
+  );
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: calc(((var(--mt-text-size) * var(--mt-modular-ratio)) * var(--mt-modular-ratio)) * var(--mt-modular-ratio));
+  }
+}
+
+/* blockquotes */
+blockquote {
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 1.45;
+  padding: 45px 0 5px;
+  margin: 0 0 25px;
+  border-left-width: 0px;
+  position: relative;
+}
+p + blockquote {
+  margin-top: 30px;
+}
+blockquote:before {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background-color: #9d9d9d;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.region--colored-background blockquote:before,
+.region--shade-background blockquote:before {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 991px) {
+  blockquote {
+    font-size: 28px;
+  }
+}
+@media (max-width: 767px) {
+  blockquote {
+    font-size: 18px;
+  }
+}
+
+/* block titles at full width regions */
+h2.title,
+nav > h2,
+.block-search > h2 {
+  font-size: 18px;
+  padding-bottom: 15px;
+  margin: 0 0 40px 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: var(--mt-border-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-left: 0;
+}
+
+/* Sidebar Block title */
+.sidebar__section h4.title,
+.sidebar__section h2.title,
+.sidebar__section nav > h2,
+.sidebar__section .block-search > h2 {
+  padding-left: 0;
+  position: relative;
+  margin-bottom: 40px;
+}
+.sidebar__section h4.title:before,
+.sidebar__section h2.title:before,
+.sidebar__section nav > h2:before,
+.sidebar__section .block-search > h2:before {
+  background-color: transparent;
+  background: none;
+  width: 0;
+  height: 0;
+}
+.sidebar__section .block-facets .facet-block-title {
+  padding-left: 1.8rem;
+}
+.sidebar__section .block-facets .facet-block-title:after {
+  top: 4px;
+}
+
+/*footer regions*/
+@media (max-width: 991px) {
+  .footer__section h2.title,
+  .footer__section nav > h2,
+  .footer__section .block-search > h2,
+  .footer-bottom__section h2.title,
+  .footer-bottom__section nav > h2,
+  .footer-bottom__section .block-search > h2,
+  .subfooter__section h2.title,
+  .subfooter__section nav > h2,
+  .subfooter__section .block-search > h2 {
+    margin-bottom: 20px;
+  }
+}
+
+/*slideout region*/
+.slideout__section h2.title,
+.slideout__section nav > h2,
+.slideout__section .block-search > h2 {
+  margin: 0 0 20px 0;
+}
+
+/* Content region overrides */
+.region-content h2.title,
+.region-content nav > h2,
+.region-content .block-search > h2 {
+  margin: 20px 0;
+}
+
+/* block titles at full width regions */
+[class="col-12"] h2.title,
+[class="col-12"] nav > h2,
+[class="col-12"] .block-search > h2 {
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+/*separators*/
+.region--tint-background hr {
+  border-color: rgba(var(--mt-color-tint-contrast-value), 0.1);
+}
+
+/* links */
+a.username:not(:hover) {
+  text-decoration: none;
+}

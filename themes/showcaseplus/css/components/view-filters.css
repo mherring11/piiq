@@ -1,0 +1,5 @@
+.view-filters .bef-exposed-form .form--inline fieldset legend,
+.view-filters .form-item > label:not(.option) {
+  font-weight: 300;
+  color: var(--mt-color-high-contrast);
+}

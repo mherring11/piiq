@@ -1,0 +1,13 @@
+{#
+/**
+ * @file
+ * Theme override for a breadcrumb trail.
+ *
+ * Available variables:
+ * - breadcrumb: Breadcrumb trail items.
+ */
+#}
+{% extends "@baseplus/breadcrumb.html.twig" %}
+{% block subtheme_libraries %}
+  {{ attach_library('showcaseplus/breadcrumb') }}
+{% endblock %}

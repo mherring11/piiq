@@ -1,0 +1,55 @@
+/**
+ * @file
+ * Visual styles for Showcase+'s tabs.
+ */
+.nav-tabs {
+  border-width: 1px;
+}
+.nav-tabs a.nav-link {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0 5px;
+  padding: 14px 25px 10px;
+}
+.nav-tabs {
+  border-width: 0!important;
+}
+.nav.nav-tabs ~ .tab-content {
+  padding: 25px;
+  border-width: 1px;
+  -webkit-border-radius: var(--mt-custom-element-border-radius);
+  -moz-border-radius: var(--mt-custom-element-border-radius);
+  border-radius: var(--mt-custom-element-border-radius);
+}
+.region--default-background .nav.nav-tabs ~ .tab-content {
+  border-color: rgba(var(--mt-color-default-contrast-value), 0.1);
+}
+.region--bright-background .nav.nav-tabs ~ .tab-content {
+  border-color: rgba(var(--mt-color-bright-contrast-value), 0.1);
+}
+.region--accent-background .nav.nav-tabs ~ .tab-content {
+  border-color: rgba(var(--mt-color-accent-contrast-value), 0.1);
+}
+.region--tint-background .nav.nav-tabs ~ .tab-content {
+  border-color: rgba(var(--mt-color-tint-contrast-value), 0.1);
+}
+.region--shade-background .nav.nav-tabs ~ .tab-content {
+  border-color: rgba(var(--mt-color-shade-contrast-value), 0.3);
+}
+.region--colored-background .nav.nav-tabs ~ .tab-content {
+  border-color: rgba(var(--mt-color-colored-contrast-value), 0.3);
+}
+.region--dark-colored-background .nav.nav-tabs ~ .tab-content {
+  border-color: rgba(var(--mt-color-dark-colored-contrast-value), 0.3);
+}
+.region--dark-background .nav.nav-tabs ~ .tab-content{
+  border-color: rgba(var(--mt-color-dark-contrast-value), 0.3);
+}
+.region--pattern .nav.nav-tabs ~ .tab-content {
+  border-color: rgba(var(--mt-color-pattern-contrast-value), 0.1);
+}
+
+/* nav tabs enriched */
+.nav.nav-tabs--enriched ~ .tab-content {
+  border-width: 0px;
+}

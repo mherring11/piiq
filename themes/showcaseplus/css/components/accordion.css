@@ -1,0 +1,64 @@
+/**
+ * @file
+ * Visual styles for Base+'s accordions.
+ */
+
+/*Style 1*/
+.collapse-group {
+  border-width: 0px;
+  border-style: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+}
+.card-title a {
+  font-size: 14px;
+}
+.card-header--trigger-icon .card-title a {
+  font-weight: 400;
+}
+.collapse-group .card + .card {
+  margin-top: 5px;
+  padding-top: 5px;
+}
+.card-header--trigger-icon .card-title a {
+  padding-left: 0;
+}
+.card-body {
+  padding: 10px 0px;
+}
+.region--default-background .collapse-group .card + .card {
+  border-top-color: rgba(var(--mt-color-default-contrast-value), 0.3);
+}
+.region--bright-background .collapse-group .card + .card {
+  border-top-color: rgba(var(--mt-color-bright-contrast-value), 0.3);
+}
+.region--accent-background .collapse-group .card + .card {
+  border-top-color: rgba(var(--mt-color-accent-contrast-value), 0.3);
+}
+.region--tint-background .collapse-group .card + .card {
+  border-top-color: rgba(var(--mt-color-tint-contrast-value), 0.3);
+}
+.region--shade-background .collapse-group .card + .card {
+  border-top-color: rgba(var(--mt-color-shade-contrast-value), 0.3);
+}
+.region--colored-background .collapse-group .card + .card {
+  border-top-color: rgba(var(--mt-color-colored-contrast-value), 0.3);
+}
+.region--dark-colored-background .collapse-group .card + .card {
+  border-top-color: rgba(var(--mt-color-dark-colored-contrast-value), 0.3);
+}
+.region--dark-background .collapse-group .card + .card {
+  border-top-color: rgba(var(--mt-color-dark-contrast-value), 0.3);
+}
+.region--pattern .collapse-group .card + .card {
+  border-top-color: rgba(var(--mt-color-pattern-contrast-value), 0.3);
+}
+.card-header--trigger-icon .card-title a:after {
+  font-size: 15px;
+  content: "\f00d";
+}
+.card-header--trigger-icon .card-title a.collapsed:after {
+  content: "\f067";
+  transform: rotate(0deg);
+}

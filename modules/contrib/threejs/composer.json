@@ -1,0 +1,29 @@
+{
+  "name": "drupal/threejs",
+  "type": "drupal-module",
+  "description": "The aim of the project is to create an easy to use Three.js library in Drupal projects. \nThe library provides Canvas 2D, SVG, CSS3D and WebGL renderers.",
+  "keywords": ["Drupal","Media", "WebGL"],
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://www.drupal.org/project/threejs",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/threejs",
+    "source": "https://git.drupalcode.org/project/threejs"
+  },
+  "authors": [
+    {
+      "name": "Ivan F eneus",
+      "homepage": "https://www.drupal.org/u/eneus",
+      "role": "Maintainer"
+    },
+    {
+      "name": "NGUYEN Bao",
+      "email": "n.bao@yahoo.com",
+      "homepage": "https://www.drupal.org/u/lazzyvn",
+      "role": "Maintainer"
+    }
+  ],
+  "require": {
+      "drupal/core": "^8.8 || ^9|| ^10"
+  }
+}

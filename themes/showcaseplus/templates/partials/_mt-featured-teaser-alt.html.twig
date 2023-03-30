@@ -1,0 +1,65 @@
+{#
+/**
+ * @file
+ * Partial template to display a node in featured teaser tile view mode.
+ */
+#}
+{% extends "@baseplus/partials/_mt-featured-teaser.html.twig" %}
+{% block header %}
+  <div class="col-lg-4">
+    <div class="featured-teaser-header mt-style-custom-all">
+      {% if  pre_content_first|render or pre_content_second|render or featured_label %}
+        <div class="mb-4 d-flex justify-content-start align-items-center">
+          {% if featured_label %}
+            {% trans %}
+              <div class="promoted-label mt-style-custom-all mb-0">Promoted</div>
+            {% endtrans %}
+          {% endif %}
+
+          {% if pre_content_first|render or pre_content_second|render %}
+            <div class="node__meta d-flex">
+              {% if pre_content_first|render %}
+                <div class="node__meta-item mb-0">
+                  {{ pre_content_first }}
+                </div>
+              {% endif %}
+              {% if pre_content_second|render %}
+                <div class="node__meta-item mb-0">
+                  {{ pre_content_second }}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if not page %}
+        <h2{{ title_attributes.addClass("mt-0 node__title") }}>
+          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        </h2>
+      {% endif %}
+
+      <div{{ content_attributes.addClass('node__content') }}>
+        {{ rendered_content }}
+      </div>
+
+      {% if display_submitted and author_info %}
+        <div class="node__meta">
+          {{ author_picture }}
+          <span{{ author_attributes.addClass('node__submitted') }}>
+            {{ author_name }}
+            {% if display_submitted and not date_overlay %}
+              {{ metadata }}
+            {% endif %}
+          </span>
+        </div>
+      {% endif %}
+
+      {% if read_more %}
+        {% trans %}
+          <a class="mt-link-stylable" href="{{ url }}">Read more</a>
+        {% endtrans %}
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}

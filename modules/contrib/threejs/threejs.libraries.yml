@@ -1,0 +1,378 @@
+# ThreeJS library and components
+# Production Version
+threejs:
+  js:
+    //threejs.org/build/three.min.js: { external, minified: true, crossorigin: anonymous}
+    /ThreeJS/models/scene.gltf: {}
+    /ThreeJS/assets/js/main.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/once
+
+# Custom module library for general purposes.
+init:
+  js:
+    js/threejs.init.js: {}
+  css:
+    component:
+      css/threejs.css: {}
+  dependencies:
+    - core/jquery
+    - core/once
+    - threejs/threejs
+
+# Custom module library for Admin.
+admin:
+  js:
+    js/threejs.admin.js: {}
+  css:
+    component:
+      css/threejs.css: {}
+  dependencies:
+    - core/jquery
+    - core/once
+    - threejs/threejs
+
+# Custom module library for Test.
+test:
+  js:
+    js/TestThreeJS.js: {}
+  css:
+    component:
+      css/threejs.css: {}
+  dependencies:
+    - threejs/threejs
+
+# Custom module library for Help page.
+help:
+  header: true
+  js:
+    help/js/BrowserDetect.js: {}
+    help/js/tdl-minified.js: {}
+    help/js/logo4.js: {}
+    help/js/init.js: {}
+  css:
+    component:
+      help/css/threejs_help.css: {}
+
+# stats
+stats:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/libs/stats.min.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# Camera Orbit Controls
+orbit.controls:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/controls/OrbitControls.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# Camera PointerLock Controls
+pointerlock.controls:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/controls/PointerLockControls.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# Camera Trackball Controls
+trackball.controls:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/controls/TrackballControls.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# Camera Transform Controls
+transform.controls:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/controls/TransformControls.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# ColladaLoader Loaders
+ColladaLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/ColladaLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# OBJLoader Loaders
+OBJLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/OBJLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# STLLoader Loaders
+STLLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/STLLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# XYZLoader Loaders
+XYZLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/XYZLoader.js: {type: external, minified: false}
+
+# VTKLoader Loaders
+VTKLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/VTKLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# VTKLoader Loaders
+WRLLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/VRMLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# VOXLoader Loaders
+VOXLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/VOXLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# TTFLoader Loaders
+TTFLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/TTFLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# TGALoader Loaders
+TGALoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/TGALoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# TDSLoader Loaders
+3DSLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/TDSLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# SVGLoader Loaders
+SVGLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/SVGLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# RGBELoader Loaders
+RGBELoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/RGBELoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# RGBMLoader Loaders
+RGBMLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/RGBMLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# PCDLoader Loaders
+PCDLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/PCDLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# PDBLoader Loaders
+PDBLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/PDBLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# PLYLoader Loaders
+PLYLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/PLYLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# PRWMLoader Loaders
+PRWMLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/PRWMLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# PVRLoader Loaders
+PVRLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/PVRLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# MD2Loader Loaders
+MD2Loader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/MD2Loader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# MMDLoader Loaders
+MMDLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/MMDLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# MMDLoader Loaders
+MTLLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/MTLLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# MMDLoader Loaders
+NRRDLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/NRRDLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# LWOLoader Loaders
+LWOLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/LWOLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# KTXLoader Loaders
+KTXLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/KTXLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+KTX2Loader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/KTX2Loader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# KMZLoader Loaders
+KMZLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/KMZLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# IFCLoader Loaders
+IFCLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/IFCLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# GLTFLoader Loaders
+GLTFLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/GLTFLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# EXRLoader Loaders
+EXRLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/EXRLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# DDSLoader Loaders
+DDSLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/DDSLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# FBXLoader Loaders
+FBXLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/jsm/libs/fflate.module.js: {type: external, minified: false}
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/FBXLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# 3DMLoader Loaders
+3DMLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/3DMLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# 3MFLoader Loaders
+3MFLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/3MFLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# AMFLoader Loaders
+AMFLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/AMFLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# AMFLoader Loaders
+BVHLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/BVHLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# DracoLoader Loaders
+DRCLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/DRACOLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# GCodeLoader Loaders
+GCODELoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/GCodeLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# MpdLoader Loaders
+MPDLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/LDrawLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# TiltLoader Loaders
+TILTLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/TiltLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# TiltLoader Loaders
+TIFLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/TIFFLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs
+
+# TiltLoader Loaders
+USDZLoader:
+  js:
+    //cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/USDZLoader.js: {type: external, minified: false}
+  dependencies:
+    - threejs/threejs

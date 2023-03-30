@@ -1,0 +1,71 @@
+/**
+ * @file
+ * Visual styles for taxonomy terms in Showcase+.
+ */
+.field--entity-reference-target-type-taxonomy-term + .field--entity-reference-target-type-taxonomy-term {
+  margin-top: 0;
+}
+.field--entity-reference-target-type-taxonomy-term.field__item {
+  display: inline-block;
+}
+.field--entity-reference-target-type-taxonomy-term .field__item,
+.field--entity-reference-target-type-taxonomy-term.field__item {
+  margin: 0 7px 0 0;
+}
+.field--entity-reference-target-type-taxonomy-term .field__item a,
+.field--entity-reference-target-type-taxonomy-term.field__item a {
+  display: block;
+  text-decoration: none;
+  padding: 7px 20px;
+  font-size: 13px;
+  background-color: var(--mt-color-tint);
+  color: var(--mt-color-primary-dark);
+}
+.region--tint-background .field--entity-reference-target-type-taxonomy-term .field__item a,
+.region--tint-background .field--entity-reference-target-type-taxonomy-term.field__item a,
+.region--accent-background .field--entity-reference-target-type-taxonomy-term .field__item a,
+.region--accent-background .field--entity-reference-target-type-taxonomy-term.field__item a {
+  background-color: var(--mt-color-bright);
+}
+.field--entity-reference-target-type-taxonomy-term .field__item:last-child a {
+  padding-right: 20px;
+}
+.field--entity-reference-target-type-taxonomy-term .field__item a:after {
+  width: 0;
+  height: 0;
+}
+.field--entity-reference-target-type-taxonomy-term .field__item a:hover,
+.field--entity-reference-target-type-taxonomy-term.field__item a:hover {
+  color: var(--mt-color-primary-contrast);
+  background-color: var(--mt-color-primary);
+}
+.node:not(.node--view-mode-full) .field--entity-reference-target-type-taxonomy-term .field__item,
+.node:not(.node--view-mode-full) .field--entity-reference-target-type-taxonomy-term.field__item {
+  margin: 0 7px 0 0;
+}
+.node:not(.node--view-mode-full) .field--entity-reference-target-type-taxonomy-term .field__item:last-child {
+  margin-right: 0;
+}
+.node.node--view-mode-mt-featured-teaser .field--entity-reference-target-type-taxonomy-term .field__item,
+.node.node--view-mode-mt-featured-teaser .field--entity-reference-target-type-taxonomy-term.field__item {
+  margin: 0px 7px 0 0;
+}
+
+.node--view-mode-mt-featured-teaser .field--entity-reference-target-type-taxonomy-term .field__item a,
+.node.node--view-mode-mt-featured-teaser .field--entity-reference-target-type-taxonomy-term.field__item a {
+  padding: 6px 20px 5px;
+}
+.field--entity-reference-target-type-taxonomy-term--tags,
+.field--entity-reference-target-type-taxonomy-term--tags.field__item {
+  margin-bottom: 0;
+}
+.field--entity-reference-target-type-taxonomy-term .field__item a,
+.field--entity-reference-target-type-taxonomy-term.field__item a {
+  border-radius: var(--mt-custom-element-border-radius);
+}
+.mt-style-oval .field--entity-reference-target-type-taxonomy-term .field__item a,
+.mt-style-oval .field--entity-reference-target-type-taxonomy-term.field__item a,
+:root .mt-style-custom-ova .field--entity-reference-target-type-taxonomy-term .field__item a,
+:root .mt-style-custom-ova .field--entity-reference-target-type-taxonomy-term.field__item a {
+  border-radius: 4px;
+}

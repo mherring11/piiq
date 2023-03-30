@@ -1,0 +1,8 @@
+/**
+ * @file
+ * Styles for sticky elements in header.
+ */
+.onscroll .mt-sticky-element-header {
+  -webkit-box-shadow: 0 2px 14px rgb(100 100 100 / 10%), 0 2px 2px rgb(100 100 100 / 10%);
+  box-shadow: 0 2px 14px rgb(100 100 100 / 10%), 0 2px 2px rgb(100 100 100 / 10%);
+}

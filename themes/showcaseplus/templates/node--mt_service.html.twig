@@ -1,0 +1,12 @@
+{#
+/**
+ * @file
+ * Base+'s theme implementation to display a Service node.
+ */
+#}
+
+{% extends "@baseplus/node--mt_service.html.twig" %}
+{% block libraries %}
+  {{ attach_library('showcaseplus/node-service') }}
+  {{ attach_library('baseplus/node-service') }}
+{% endblock %}

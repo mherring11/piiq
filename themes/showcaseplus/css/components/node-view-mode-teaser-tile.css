@@ -1,0 +1,179 @@
+/**
+ * @file
+ * Visual styles for Showcase+'s node in teaser tile view.
+ */
+@media (min-width: 992px) {
+  .view .col-lg-3:nth-last-child(4) .node--view-mode-mt-teaser-tile,
+  .view .col-lg-3:nth-last-child(3) .node--view-mode-mt-teaser-tile,
+  .view .col-lg-3:nth-last-child(2) .node--view-mode-mt-teaser-tile,
+  .view .col-lg-3:nth-last-child(1) .node--view-mode-mt-teaser-tile {
+    margin-bottom: 25px;
+  }
+  .view .col-lg-4:nth-last-child(3) .node--view-mode-mt-teaser-tile,
+  .view .col-lg-4:nth-last-child(2) .node--view-mode-mt-teaser-tile,
+  .view .col-lg-4:nth-last-child(1) .node--view-mode-mt-teaser-tile {
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .view .col-md-6:nth-last-child(2) .node--view-mode-mt-teaser-tile,
+  .view .col-md-6:nth-last-child(1) .node--view-mode-mt-teaser-tile {
+    margin-bottom: 25px;
+  }
+}
+
+.node--view-mode-mt-teaser-tile.region--default-background {
+  box-shadow: none;
+}
+.node--view-mode-mt-teaser-tile .node__title {
+  font-size: 20px;
+  font-weight: 400;
+}
+.node--view-mode-mt-teaser-tile .node__title a {
+  color: var(--mt-dark-link-color);
+}
+.node--view-mode-mt-teaser-tile .node__title a:hover {
+  text-decoration: none;
+  color: var(--mt-dark-link-color-hover);
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-subtitle > .field {
+  padding: 0;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-pre-content {
+  font-size: 18px;
+}
+.node--view-mode-mt-teaser-tile-commerce-product .node__title {
+  text-align: center;
+}
+.node--view-mode-mt-teaser-tile-commerce-product .teaser-tile-content {
+  text-align: center;
+  font-size: 24px;
+  width: 100%;
+  margin: 10px 0;
+}
+.node--view-mode-mt-teaser-tile .node__content:last-child {
+  padding-bottom: 0;
+}
+
+/* teaser tile header e.g. in post teaser tile */
+.node--view-mode-mt-teaser-tile .mt-teaser-tile-card .teaser-tile-header {
+  background-color: var(--mt-color-tint);
+  padding: 40px 15px;
+  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+  position: relative;
+  margin-bottom: 30px;
+  z-index: 10;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.region--colored-background .node--view-mode-mt-teaser-tile .teaser-tile-header,
+.region--dark-background .node--view-mode-mt-teaser-tile .teaser-tile-header,
+.region--shade-background .node--view-mode-mt-teaser-tile .teaser-tile-header {
+  background-color: var(--mt-color-dark-colored);
+}
+.region--dark-colored-background .node--view-mode-mt-teaser-tile .teaser-tile-header {
+  background-color: var(--mt-color-colored);
+}
+.views-row:hover .node--view-mode-mt-teaser-tile .teaser-tile-header {
+  -webkit-box-shadow: rgba(28, 56, 72, 0.1) 0px 2px 2px,
+    rgba(28, 56, 72, 0.1) 0px 4px 4px, rgba(28, 56, 72, 0.1) 0px 8px 8px,
+    rgba(28, 56, 72, 0.1) 0px 16px 16px;
+  box-shadow: rgba(28, 56, 72, 0.1) 0px 2px 2px,
+    rgba(28, 56, 72, 0.1) 0px 4px 4px, rgba(28, 56, 72, 0.1) 0px 8px 8px,
+    rgba(28, 56, 72, 0.1) 0px 16px 16px;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-image-container + .teaser-tile-header,
+.node--view-mode-mt-teaser-tile .teaser-tile-image-container + .pt-4 .teaser-tile-header {
+  margin-top: -55px;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-header .node__title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.3;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-header .teaser-tile-content-wrapper {
+  padding-bottom: 0;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-header .teaser-tile-pre-content,
+.node--view-mode-mt-teaser-tile .teaser-tile-header .teaser-tile-pre-content a {
+  font-size: 13px;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-header .teaser-tile-content {
+  font-size: 13px;
+  font-weight: 300;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-header .username {
+  text-transform: capitalize;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-header .teaser-tile-pre-content-item:after {
+    content: "";
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-header .teaser-tile-pre-content .teaser-tile-content-separator {
+  font-size: 4px;
+  height: 100%;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 5px;
+  opacity: 0.7;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-header .teaser-tile-pre-content + .teaser-tile-content-separator {
+  height: 17px;
+  width: 1px;
+  background-color: #d7d7d7;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-header .field--entity-reference-target-type-taxonomy-term .field__item,
+.node--view-mode-mt-teaser-tile .teaser-tile-header .field--entity-reference-target-type-taxonomy-term.field__item {
+  margin-right: 0;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-header .field--entity-reference-target-type-taxonomy-term .field__item a,
+.node--view-mode-mt-teaser-tile .teaser-tile-header .field--entity-reference-target-type-taxonomy-term.field__item a {
+  padding: 0;
+  background-color: transparent;
+  color: var(--mt-link-color);
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-header .field--entity-reference-target-type-taxonomy-term .field__item a:hover,
+.node--view-mode-mt-teaser-tile .teaser-tile-header .field--entity-reference-target-type-taxonomy-term.field__item a:hover {
+  text-decoration: underline;
+}
+.node--view-mode-mt-teaser-tile .mt-teaser-tile-card .teaser-tile-header .teaser-tile-content-wrapper {
+  padding-bottom: 40px;
+}
+
+/*post at colored regions*/
+.region--tint-background .node--view-mode-mt-teaser-tile .teaser-tile-header,
+.region--accent-background .node--view-mode-mt-teaser-tile .teaser-tile-header {
+  background-color: #ffffff;
+}
+
+/* 2 col mobile layout */
+@media (max-width: 490px) {
+  .node--view-mode-mt-teaser-tile.mt-mobile-layout-2-col .teaser-tile-image-container {
+    padding: 0;
+  }
+  .node--view-mode-mt-teaser-tile.mt-mobile-layout-2-col .mt-teaser-tile-card {
+    padding-top: 0!important;
+  }
+}
+
+/*Changes for news Layout Builder blocks*/
+.mt-news-hero .node--view-mode-mt-teaser-tile .mt-teaser-tile-card .teaser-tile-header {
+  width: 100%;
+  margin-left: 0;
+  padding: 30px 10px 30px 10px;
+}
+.mt-news-hero .node--type-mt-post.node--view-mode-mt-teaser-tile {
+  padding: 1.5rem 0.5rem 1rem 0.5rem;
+}
+.mt-news-hero .node--view-mode-mt-teaser-tile {
+  margin-bottom: 30px;
+}
+.node--type-mt-post.node--view-mode-mt-teaser-tile .node__title {
+  min-height: 80px;
+}

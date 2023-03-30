@@ -1,0 +1,48 @@
+/**
+ * @file
+ * Visual styles for Showcase+'s hero form block.
+ */
+.block-mt-hero-form .field--name-field-mt-hero-form-title {
+  font-size: 46px;
+  font-weight: 300;
+}
+.block-mt-hero-form .field--name-field-mt-hero-form-title .typed-cursor {
+  line-height: 1;
+  vertical-align: top;
+}
+@media (min-width: 992px) {
+  .block-mt-hero-form .field--name-field-mt-hero-form-title.mt-typing-animation-enabled {
+    min-height: 185px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .block-mt-hero-form .col-lg-6 .field--name-field-mt-hero-form-title.mt-typing-animation-enabled {
+    min-height: 220px;
+  }
+}
+@media (min-width: 1200px) {
+  .block-mt-hero-form .field--name-field-mt-hero-form-title {
+    font-size: 50px;
+  }
+  .block-mt-hero-form .field--name-field-mt-hero-form-title.mt-typing-animation-enabled {
+    min-height: 200px;
+  }
+}
+@media (min-width: 1440px) {
+  .block-mt-hero-form .col-lg-4 .field--name-field-mt-hero-form-title.mt-typing-animation-enabled {
+    min-height: 290px;
+  }
+}
+@media (max-width: 991px) {
+  .block-mt-hero-form .field--name-field-mt-hero-form-title.mt-typing-animation-enabled {
+    min-height: 130px;
+  }
+}
+@media (max-width: 575px) {
+  .block-mt-hero-form .field--name-field-mt-hero-form-title {
+    font-size: 35px;
+  }
+  .block-mt-hero-form .field--name-field-mt-hero-form-title .typed-cursor {
+    font-size: 34px;
+  }
+}

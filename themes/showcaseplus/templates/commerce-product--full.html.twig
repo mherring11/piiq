@@ -1,0 +1,11 @@
+{#
+/**
+ * @file
+ * Base+'s theme implementation to display a Commerce Product node.
+ */
+#}
+{% extends "@baseplus/commerce-product--full.html.twig" %}
+{% block libraries %}
+  {{ attach_library('baseplus/commerce-product') }}
+  {{ attach_library('showcaseplus/commerce-product') }}
+{% endblock %}

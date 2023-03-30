@@ -1,0 +1,90 @@
+/**
+ * @file
+ * Styles for menus in Showcase+.
+ */
+
+/* header generic */
+.header-container ul.menu > li > a,
+.header-container ul.menu > li > span {
+  font-size: 12px;
+  font-weight: 600;
+}
+.header-container .sf-menu ul li a {
+  font-size: 14px;
+  font-weight: 400;
+}
+@media (max-width: 1440px) {
+  .header-container ul.menu > li > a,
+  .header-container ul.menu > li > span {
+    margin: 0;
+  }
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+  .header-container ul.menu > li > a,
+  .header-container ul.menu > li > span {
+    font-size: 11px;
+  }
+}
+.header.region--tint-background .sf-menu.menu ul {
+  background-color: #f1f1f1;
+}
+.header-container .sf-shadow.sf-menu.menu ul {
+  -webkit-box-shadow: rgb(28 56 72 / 10%) 0px 2px 2px, rgb(28 56 72 / 10%) 0px 4px 4px, rgb(28 56 72 / 10%) 0px 8px 8px, rgb(28 56 72 / 10%) 0px 16px 16px, rgb(28 56 72 / 10%) 0px 32px 32px, rgb(28 56 72 / 10%) 0px 64px 64px;
+  box-shadow: rgb(28 56 72 / 10%) 0px 2px 2px, rgb(28 56 72 / 10%) 0px 4px 4px, rgb(28 56 72 / 10%) 0px 8px 8px, rgb(28 56 72 / 10%) 0px 16px 16px, rgb(28 56 72 / 10%) 0px 32px 32px, rgb(28 56 72 / 10%) 0px 64px 64px;
+}
+.header-container .sf-shadow.sf-menu.menu ul ul {
+  margin: 0 10px;
+}
+.header-container ul.sf-menu > li > a .sf-sub-indicator:after {
+  font-size: 11px;
+  top: -3px;
+  margin-left: -5px;
+  opacity: 0.65;
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+  .header-container ul.sf-menu > li > a .sf-sub-indicator:after {
+    margin-left: 2px;
+  }
+  .header-container ul.sf-menu > li.menuparent > a {
+    padding-right: 10px;
+  }
+}
+.menu .active-trail > a,
+.menu li > a:hover,
+.menu li > a:focus,
+.menu li.sfHover > a,
+.menu .active-trail a.is-active {
+  color: var(--mt-link-color);
+  opacity: 1;
+}
+
+/* header top highlighted */
+.header-top-highlighted__section ul.menu:not(.sf-accordion) li a,
+.header-top-highlighted__section ul.menu:not(.sf-accordion) li > span {
+  font-size: 11px;
+  font-weight: 300;
+}
+
+/* cta button */
+.menu.cta-active > li:last-child > a:hover {
+  text-decoration: none;
+  -webkit-box-shadow: rgba(28, 56, 72, 0.1) 0px 2px 2px, rgba(28, 56, 72, 0.1) 0px 4px 4px, rgba(28, 56, 72, 0.1) 0px 8px 8px, rgba(28, 56, 72, 0.1) 0px 16px 16px, rgba(28, 56, 72, 0.1) 0px 32px 32px, rgba(28, 56, 72, 0.1) 0px 64px 64px;
+  -moz-box-shadow: rgba(28, 56, 72, 0.1) 0px 2px 2px, rgba(28, 56, 72, 0.1) 0px 4px 4px, rgba(28, 56, 72, 0.1) 0px 8px 8px, rgba(28, 56, 72, 0.1) 0px 16px 16px, rgba(28, 56, 72, 0.1) 0px 32px 32px, rgba(28, 56, 72, 0.1) 0px 64px 64px;
+  -ms-box-shadow:rgba(28, 56, 72, 0.1) 0px 2px 2px, rgba(28, 56, 72, 0.1) 0px 4px 4px, rgba(28, 56, 72, 0.1) 0px 8px 8px, rgba(28, 56, 72, 0.1) 0px 16px 16px, rgba(28, 56, 72, 0.1) 0px 32px 32px, rgba(28, 56, 72, 0.1) 0px 64px 64px;
+  box-shadow: rgba(28, 56, 72, 0.1) 0px 2px 2px, rgba(28, 56, 72, 0.1) 0px 4px 4px, rgba(28, 56, 72, 0.1) 0px 8px 8px, rgba(28, 56, 72, 0.1) 0px 16px 16px, rgba(28, 56, 72, 0.1) 0px 32px 32px, rgba(28, 56, 72, 0.1) 0px 64px 64px;
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+  .menu.cta-active > li:last-child > a {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0;
+  }
+}
+/* subfooter region */
+.subfooter__section ul.menu li a,
+.subfooter__section ul.menu li > span {
+  font-size: 13px;
+}
+.subfooter__section ul.menu li:after {
+  top: 1px;
+}

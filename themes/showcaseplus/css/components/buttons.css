@@ -1,0 +1,98 @@
+/**
+ * @file
+ * Styles for Showcase+'s buttons.
+ */
+
+ /* generic button */
+a.mt-button,
+.mt-button > a,
+button.mt-button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 15px 30px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+a.mt-button.mt-button--small,
+.mt-button.mt-button--small > a,
+button.mt-button.mt-button--small {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 8px 20px;
+}
+a.mt-button.mt-button--small:hover,
+.mt-button.mt-button--small > a:hover,
+button.mt-button.mt-button--small:hover {
+  padding: 8px 20px;
+}
+a.mt-button:hover,
+.mt-button > a:hover,
+button.mt-button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+a.mt-button:focus,
+.mt-button > a:focus,
+button.mt-button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  text-decoration: none;
+  -webkit-box-shadow: rgba(28, 56, 72, 0.1) 0px 2px 2px, rgba(28, 56, 72, 0.1) 0px 4px 4px, rgba(28, 56, 72, 0.1) 0px 8px 8px, rgba(28, 56, 72, 0.1) 0px 16px 16px, rgba(28, 56, 72, 0.1) 0px 32px 32px, rgba(28, 56, 72, 0.1) 0px 64px 64px;
+  -moz-box-shadow: rgba(28, 56, 72, 0.1) 0px 2px 2px, rgba(28, 56, 72, 0.1) 0px 4px 4px, rgba(28, 56, 72, 0.1) 0px 8px 8px, rgba(28, 56, 72, 0.1) 0px 16px 16px, rgba(28, 56, 72, 0.1) 0px 32px 32px, rgba(28, 56, 72, 0.1) 0px 64px 64px;
+  -ms-box-shadow:rgba(28, 56, 72, 0.1) 0px 2px 2px, rgba(28, 56, 72, 0.1) 0px 4px 4px, rgba(28, 56, 72, 0.1) 0px 8px 8px, rgba(28, 56, 72, 0.1) 0px 16px 16px, rgba(28, 56, 72, 0.1) 0px 32px 32px, rgba(28, 56, 72, 0.1) 0px 64px 64px;
+  box-shadow: rgba(28, 56, 72, 0.1) 0px 2px 2px, rgba(28, 56, 72, 0.1) 0px 4px 4px, rgba(28, 56, 72, 0.1) 0px 8px 8px, rgba(28, 56, 72, 0.1) 0px 16px 16px, rgba(28, 56, 72, 0.1) 0px 32px 32px, rgba(28, 56, 72, 0.1) 0px 64px 64px;
+}
+a.mt-button:hover,
+.mt-button > a:hover,
+button.mt-button:hover {
+  padding: 15px 30px;
+}
+a.mt-button:after,
+.mt-button > a:after,
+button.mt-button:after,
+input[type="submit"]:after,
+input[type="reset"]:after,
+input[type="button"]:after {
+  content: "";
+}
+
+/* commerce product tiles buttons */
+.mt-teaser-tile-card a.mt-button,
+.mt-teaser-tile-card .mt-button > a,
+.mt-teaser-tile-card button.mt-button,
+.mt-teaser-tile-card input[type="submit"],
+.mt-teaser-tile-card input[type="reset"],
+.mt-teaser-tile-card input[type="button"] {
+  font-size: 12px;
+  padding: 12px 25px;
+}
+@media (min-width: 1200px) {
+  .col-xl-2 .mt-teaser-tile-card a.mt-button,
+  .col-xl-2 .mt-teaser-tile-card .mt-button > a,
+  .col-xl-2 .mt-teaser-tile-card button.mt-button,
+  .col-xl-2 .mt-teaser-tile-card input[type="submit"],
+  .col-xl-2 .mt-teaser-tile-card input[type="reset"],
+  .col-xl-2 .mt-teaser-tile-card input[type="button"] {
+    font-size: 12px;
+    padding: 15px 13px;
+  }
+}
+
+/* highlight features buttons */
+.paragraph--view-mode--mt-teaser-tile.paragraph--type--mt-highlight .mt-button a {
+  font-size: 12px;
+  padding: 12px 25px;
+}
+.paragraph--view-mode--mt-teaser-tile.paragraph--type--mt-highlight .mt-button a:hover {
+  padding: 12px 25px;
+}
+
+/* flag module button */
+.product-content .flag-mt-favorites.mt-button a:hover,
+.product-content .flag-mt-favorites.mt-button a:focus {
+  padding-right: 30px;
+}

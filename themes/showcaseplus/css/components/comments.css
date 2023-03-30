@@ -1,0 +1,12 @@
+/**
+ * @file
+ * Visual styles for comments section in Showcase+.
+ */
+
+/*comments section*/
+.comment-wrapper h2.title {
+  padding-bottom: 20px;
+  font-size: 12px;
+  font-weight: 300;
+  border-bottom-width: 1px;
+}

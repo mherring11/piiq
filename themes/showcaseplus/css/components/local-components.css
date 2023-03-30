@@ -1,0 +1,12 @@
+/**
+ * @file
+ * Use this CSS file to override components CSS rules
+ */
+/* Fix contextual links size */
+.contextual-region .contextual .contextual-links a {
+  font-size: small;
+  padding: 0.4em 0.6em;
+}
+.page-view-type-products .hero-top {
+  background-position: 50% 19%;
+}

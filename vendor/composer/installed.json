@@ -739,6 +739,59 @@
             "install-path": "../../modules/contrib/backup_migrate"
         },
         {
+            "name": "drupal/block_background_color",
+            "version": "1.2.0",
+            "version_normalized": "1.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/block_background_color.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/block_background_color-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "47a495db547ddb918b3d68bd985ea44c03101b65"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1659985037",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "George Anderson (geoanders)",
+                    "homepage": "https://www.drupal.org/u/geoanders",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "nitheesh",
+                    "homepage": "https://www.drupal.org/user/3040429"
+                }
+            ],
+            "description": "Changes the background color of a block.",
+            "homepage": "https://drupal.org/project/block_background_color",
+            "support": {
+                "source": "https://git.drupalcode.org/project/block_background_color",
+                "issues": "https://drupal.org/project/issues/block_background_color"
+            },
+            "install-path": "../../modules/contrib/block_background_color"
+        },
+        {
             "name": "drupal/core",
             "version": "9.5.4",
             "version_normalized": "9.5.4.0",
@@ -1447,6 +1500,77 @@
             "install-path": "../../modules/contrib/fullcalendar_view"
         },
         {
+            "name": "drupal/gmv",
+            "version": "1.0.0-alpha4",
+            "version_normalized": "1.0.0.0-alpha4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/gmv.git",
+                "reference": "1.0.0-alpha4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/gmv-1.0.0-alpha4.zip",
+                "reference": "1.0.0-alpha4",
+                "shasum": "4e92801be3fba5f03a1d22d469c131e5d707385f"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-alpha4",
+                    "datestamp": "1672724827",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ajay T",
+                    "homepage": "https://www.drupal.org/user/3717162"
+                },
+                {
+                    "name": "ajin c das",
+                    "homepage": "https://www.drupal.org/user/3727382"
+                },
+                {
+                    "name": "Althaf",
+                    "homepage": "https://www.drupal.org/user/3493473"
+                },
+                {
+                    "name": "harivenuv",
+                    "homepage": "https://www.drupal.org/user/3386122"
+                },
+                {
+                    "name": "kabeermsn",
+                    "homepage": "https://www.drupal.org/user/3604231"
+                },
+                {
+                    "name": "renjith.kumar",
+                    "homepage": "https://www.drupal.org/user/3595964"
+                },
+                {
+                    "name": "rs.abhilash",
+                    "homepage": "https://www.drupal.org/user/3678155"
+                }
+            ],
+            "description": "Easily display interactive 3D models on the web",
+            "homepage": "https://www.drupal.org/project/gmv",
+            "support": {
+                "source": "https://git.drupalcode.org/project/gmv"
+            },
+            "install-path": "../../modules/contrib/gmv"
+        },
+        {
             "name": "drupal/layout_builder_modal",
             "version": "1.2.0",
             "version_normalized": "1.2.0.0",
@@ -1511,6 +1635,75 @@
                 "issues": "https://www.drupal.org/project/issues/layout_builder_modal"
             },
             "install-path": "../../modules/contrib/layout_builder_modal"
+        },
+        {
+            "name": "drupal/libraries",
+            "version": "4.0.0",
+            "version_normalized": "4.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/libraries.git",
+                "reference": "4.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/libraries-4.0.0.zip",
+                "reference": "4.0.0",
+                "shasum": "52c0b4ecb0566d36afdeb5f8cf780d085a41fc64"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "4.0.0",
+                    "datestamp": "1666346899",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "joseph.olstad",
+                    "homepage": "https://www.drupal.org/user/1321830"
+                },
+                {
+                    "name": "podarok",
+                    "homepage": "https://www.drupal.org/user/116002"
+                },
+                {
+                    "name": "Pol",
+                    "homepage": "https://www.drupal.org/user/47194"
+                },
+                {
+                    "name": "rjacobs",
+                    "homepage": "https://www.drupal.org/user/422459"
+                },
+                {
+                    "name": "sun",
+                    "homepage": "https://www.drupal.org/user/54136"
+                },
+                {
+                    "name": "tstoeckler",
+                    "homepage": "https://www.drupal.org/user/107158"
+                }
+            ],
+            "description": "Allows version-dependent and shared usage of external libraries in Drupal.",
+            "homepage": "http://drupal.org/project/libraries",
+            "support": {
+                "source": "http://cgit.drupalcode.org/libraries",
+                "issues": "http://drupal.org/project/issues/libraries",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            },
+            "install-path": "../../modules/contrib/libraries"
         },
         {
             "name": "drupal/linkit",
@@ -2031,6 +2224,66 @@
                 "source": "https://git.drupalcode.org/project/sketchfab"
             },
             "install-path": "../../modules/contrib/sketchfab"
+        },
+        {
+            "name": "drupal/threejs",
+            "version": "1.0.4",
+            "version_normalized": "1.0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/threejs.git",
+                "reference": "1.0.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/threejs-1.0.4.zip",
+                "reference": "1.0.4",
+                "shasum": "58e719d7749c4a4b25b6b08204007e2a0c72639f"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9|| ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.4",
+                    "datestamp": "1675692574",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan F eneus",
+                    "homepage": "https://www.drupal.org/u/eneus",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "NGUYEN Bao",
+                    "homepage": "https://www.drupal.org/u/lazzyvn",
+                    "email": "n.bao@yahoo.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "The aim of the project is to create an easy to use Three.js library in Drupal projects. \nThe library provides Canvas 2D, SVG, CSS3D and WebGL renderers.",
+            "homepage": "https://www.drupal.org/project/threejs",
+            "keywords": [
+                "Drupal",
+                "Media",
+                "WebGL"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/threejs",
+                "issues": "https://www.drupal.org/project/issues/threejs"
+            },
+            "install-path": "../../modules/contrib/threejs"
         },
         {
             "name": "drupal/token",

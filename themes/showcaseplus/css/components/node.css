@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Visual styles for Showcase+'s node.
+ */
+.path-node .block-page-title-block .page-title,
+.path-node .node .page-title {
+  font-size: 40px;
+  font-weight: 300;
+}
+@media (max-width: 576px) {
+  .path-node .block-page-title-block .page-title,
+  .path-node .node .page-title {
+    font-size: calc(((var(--mt-text-size) * var(--mt-modular-ratio)) * var(--mt-modular-ratio)) * var(--mt-modular-ratio));
+  }
+}
+.node .field .field__label {
+  font-weight: 300;
+  font-size: 24px;
+}

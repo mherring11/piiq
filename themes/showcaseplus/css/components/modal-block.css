@@ -1,0 +1,7 @@
+/**
+ * @file
+ * Visual styles for Showcase+'s modal block.
+ */
+.block-type--mt-modal .modal-icon-button {
+  font-size: 14px;
+}

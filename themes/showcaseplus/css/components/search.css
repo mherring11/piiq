@@ -1,0 +1,25 @@
+/**
+ * @file
+ * Visual styles for Showcase+'s search block.
+ */
+/*Navigation search bar*/
+.header__section .modal .block-search input.form-search,
+.header__section .block-search .modal input.form-search {
+  background-color: var(--mt-color-tint);
+}
+.header__section .modal .block-search input.form-search::-webkit-input-placeholder,
+.header__section .block-search .modal input.form-search::-webkit-input-placeholder {
+  color: var(--mt-base-color);
+}
+.header__section .modal .block-search input.form-search:-moz-placeholder,
+.header__section .block-search .modal input.form-search:-moz-placeholder {
+  color: var(--mt-base-color);
+}
+.header__section .modal .block-search input.form-search:-ms-input-placeholder,
+.header__section .block-search .modal input.form-search:-ms-input-placeholder {
+  color: var(--mt-base-color);
+}
+.header__section .modal .block-search input.form-search::placeholder,
+.header__section .block-search .modal input.form-search::placeholder {
+  color: var(--mt-base-color);
+}

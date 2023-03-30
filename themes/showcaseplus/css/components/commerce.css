@@ -1,0 +1,12 @@
+/**
+ * @file
+ * Visual styles for Showcase+'s commerce.
+ */
+header.header .cart-block--link__expand {
+  color: var(--mt-color-high-contrast);
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+  header.header .cart-block--link__expand {
+    padding: 15px 0px;
+  }
+}

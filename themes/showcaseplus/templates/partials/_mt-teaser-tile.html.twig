@@ -1,0 +1,12 @@
+{#
+/**
+ * @file
+ * Partial template to display a node in teaser tile view mode.
+ */
+#}
+{% extends '@baseplus/partials/_mt-teaser-tile.html.twig' %}
+{% block tile_title %}
+  <h5{{ title_attributes.addClass("mt-0 mb-0 node__title col") }}>
+    <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+  </h5>
+{% endblock %}

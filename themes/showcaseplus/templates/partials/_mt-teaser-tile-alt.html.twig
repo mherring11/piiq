@@ -1,0 +1,57 @@
+{#
+/**
+ * @file
+ * Partial template to display a node in teaser tile view mode.
+ */
+#}
+{% extends "@baseplus/partials/_mt-teaser-tile.html.twig" %}
+{% block header %}
+  <div class="teaser-tile-header mt-style-custom-all">
+    <div class="row align-items-center mb-2">
+      {% if not page %}
+        {% block tile_title %}
+          <h4{{ title_attributes.addClass("mt-0 mb-0 node__title col") }}>
+            <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+          </h4>
+        {% endblock %}
+      {% endif %}
+      {% if teaser_tile_subtitle|render %}
+        <div class="teaser-tile-subtitle col-auto">
+          {{ teaser_tile_subtitle }}
+        </div>
+      {% endif %}
+    </div>
+
+    {% if teaser_tile_pre_content_first|render or teaser_tile_pre_content_second|render or teaser_tile_content|render %}
+      <div class="row teaser-tile-content-wrapper align-items-center justify-content-center">
+        {% if teaser_tile_pre_content_first|render or teaser_tile_pre_content_second|render %}
+          <div class="teaser-tile-pre-content col-auto">
+            {% if teaser_tile_pre_content_first|render %}
+              <div class="teaser-tile-pre-content-item">
+                {{ teaser_tile_pre_content_first }}
+              </div>
+            {% endif %}
+            {% if teaser_tile_pre_content_first|render %}
+              <span class="teaser-tile-content-separator col-auto"><i class="fas fa-circle"></i></span>
+            {% endif %}
+            {% if teaser_tile_pre_content_second|render %}
+              <div class="teaser-tile-pre-content-item">
+                {{ teaser_tile_pre_content_second }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+
+        {% if teaser_tile_content|render and (teaser_tile_pre_content_first|render or teaser_tile_pre_content_second|render) %}
+          <div class="teaser-tile-content-separator col-auto px-0"></div>
+        {% endif %}
+
+        {% if teaser_tile_content|render %}
+          <div class="teaser-tile-content  col-auto">
+            {{ teaser_tile_content }}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+{% endblock %}

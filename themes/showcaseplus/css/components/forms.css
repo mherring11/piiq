@@ -1,0 +1,253 @@
+/**
+ * @file
+ * Visual styles for Showcase+'s forms.
+ */
+input.form-text,
+input.form-tel,
+input.form-email,
+input.form-url,
+input.form-search,
+input.form-file,
+input.form-number,
+input.form-color,
+input.form-date,
+input.form-time,
+textarea,
+select {
+  border-width: 1px;
+  border-style: solid;
+  -webkit-transition: box-shadow 0.2s linear, border-color 0.2s linear;
+  -o-transition: box-shadow 0.2s linear, border-color 0.2s linear;
+  transition: box-shadow 0.2s linear, border-color 0.2s linear;
+  font-weight: 500;
+}
+input.form-text:hover,
+input.form-tel:hover,
+input.form-email:hover,
+input.form-url:hover,
+input.form-search:hover,
+input.form-file:hover,
+input.form-number:hover,
+input.form-color:hover,
+input.form-date:hover,
+input.form-time:hover,
+textarea:hover,
+select:hover,
+input.form-text:focus,
+input.form-tel:focus,
+input.form-email:focus,
+input.form-url:focus,
+input.form-search:focus,
+input.form-file:focus,
+input.form-number:focus,
+input.form-color:focus,
+input.form-date:focus,
+input.form-time:focus,
+textarea:focus,
+select:focus {
+  -webkit-box-shadow: 0px 0px 10px #cdd6db;
+  box-shadow: 0px 0px 10px #cdd6db;
+}
+.region--default-background input.form-text,
+.region--default-background input.form-tel,
+.region--default-background input.form-email,
+.region--default-background input.form-url,
+.region--default-background input.form-search,
+.region--default-background input.form-file,
+.region--default-background input.form-number,
+.region--default-background input.form-color,
+.region--default-background input.form-date,
+.region--default-background input.form-time,
+.region--default-background textarea,
+.region--default-background select,
+.region--default-background select option {
+  background-color: var(--mt-form-background)
+}
+.region--bright-background input.form-text,
+.region--bright-background input.form-tel,
+.region--bright-background input.form-email,
+.region--bright-background input.form-url,
+.region--bright-background input.form-search,
+.region--bright-background input.form-file,
+.region--bright-background input.form-number,
+.region--bright-background input.form-color,
+.region--bright-background input.form-date,
+.region--bright-background input.form-time,
+.region--bright-background textarea,
+.region--bright-background select,
+.region--bright-background select option {
+  background-color: var(--mt-form-background)
+}
+.region--accent-background input.form-text,
+.region--accent-background input.form-tel,
+.region--accent-background input.form-email,
+.region--accent-background input.form-url,
+.region--accent-background input.form-search,
+.region--accent-background input.form-file,
+.region--accent-background input.form-number,
+.region--accent-background input.form-color,
+.region--accent-background input.form-date,
+.region--accent-background input.form-time,
+.region--accent-background textarea,
+.region--accent-background select,
+.region--accent-background select option {
+  background-color: #ffffff
+}
+.region--tint-background input.form-text,
+.region--tint-background input.form-tel,
+.region--tint-background input.form-email,
+.region--tint-background input.form-url,
+.region--tint-background input.form-search,
+.region--tint-background input.form-file,
+.region--tint-background input.form-number,
+.region--tint-background input.form-color,
+.region--tint-background input.form-date,
+.region--tint-background input.form-time,
+.region--tint-background textarea,
+.region--tint-background select,
+.region--tint-background select option {
+  background-color: #ffffff
+}
+.region--pattern input.form-text,
+.region--pattern input.form-tel,
+.region--pattern input.form-email,
+.region--pattern input.form-url,
+.region--pattern input.form-search,
+.region--pattern input.form-file,
+.region--pattern input.form-number,
+.region--pattern input.form-color,
+.region--pattern input.form-date,
+.region--pattern input.form-time,
+.region--pattern textarea,
+.region--pattern select,
+.region--pattern select option {
+  background-color: var(--mt-form-background)
+}
+
+.region--shade-background input.form-text,
+.region--shade-background input.form-tel,
+.region--shade-background input.form-email,
+.region--shade-background input.form-url,
+.region--shade-background input.form-search,
+.region--shade-background input.form-file,
+.region--shade-background input.form-number,
+.region--shade-background input.form-color,
+.region--shade-background input.form-date,
+.region--shade-background input.form-time,
+.region--shade-background textarea,
+.region--shade-background select,
+.region--shade-background select option {
+  background-color: var(--mt-color-shade);
+  box-shadow: none;
+}
+.region--colored-background input.form-text,
+.region--colored-background input.form-tel,
+.region--colored-background input.form-email,
+.region--colored-background input.form-url,
+.region--colored-background input.form-search,
+.region--colored-background input.form-file,
+.region--colored-background input.form-number,
+.region--colored-background input.form-color,
+.region--colored-background input.form-date,
+.region--colored-background input.form-time,
+.region--colored-background textarea,
+.region--colored-background select,
+.region--colored-background select option {
+  background-color: var(--mt-color-colored-light);
+  box-shadow: none;
+}
+.region--dark-colored-background input.form-text,
+.region--dark-colored-background input.form-tel,
+.region--dark-colored-background input.form-email,
+.region--dark-colored-background input.form-url,
+.region--dark-colored-background input.form-search,
+.region--dark-colored-background input.form-file,
+.region--dark-colored-background input.form-number,
+.region--dark-colored-background input.form-color,
+.region--dark-colored-background input.form-date,
+.region--dark-colored-background input.form-time,
+.region--dark-colored-background textarea,
+.region--dark-colored-background select,
+.region--dark-colored-background select option {
+  background-color: var(--mt-color-dark-colored);
+  box-shadow: none;
+}
+.region--dark-background input.form-text,
+.region--dark-background input.form-tel,
+.region--dark-background input.form-email,
+.region--dark-background input.form-url,
+.region--dark-background input.form-search,
+.region--dark-background input.form-file,
+.region--dark-background input.form-number,
+.region--dark-background input.form-color,
+.region--dark-background input.form-date,
+.region--dark-background input.form-time,
+.region--dark-background textarea,
+.region--dark-background select,
+.region--dark-background select option {
+  background-color: var(--mt-color-dark);
+  box-shadow: none;
+}
+
+/* Disabled form elements */
+:root .region--default-background,
+:root .region--bright-background,
+:root .region--accent-background,
+:root .region--tint-background,
+:root .region--pattern {
+  /*Disabled and read only forms*/
+  --mt-form-disabled-background-color: #d3d3d3;
+  --mt-form-disabled-border-color: #d3d3d3;
+  --mt-form-disabled-placeholder-color: #444444;
+
+  /*Disabled submit type*/
+  --mt-submit-disabled-color: #444444;
+  --mt-submit-disabled-background-color: #d3d3d3;
+}
+:root .region--shade-background,
+:root .region--dark-background {
+  /*Disabled and read only forms*/
+  --mt-form-disabled-background-color: #353535;
+  --mt-form-disabled-border-color: #353535;
+  --mt-form-disabled-color: hsl(210deg 50% 98% / 20%);
+  --mt-form-disabled-opacity: 1;
+
+  /*Disabled submit type*/
+  --mt-submit-disabled-color: rgba(var(--mt-color-base-contrast-value), 0.5);
+  --mt-submit-disabled-background-color: #353535;
+  --mt-submit-disabled-opacity: 1;
+  --mt-form-disabled-placeholder-color: rgba(var(--mt-color-base-contrast-value), 0.5);
+}
+:root .region--colored-background,
+:root .region--dark-colored-background {
+  --mt-form-disabled-placeholder-color: var(--mt-color-base-contrast);
+}
+
+/*Disabled form elements*/
+input[readonly="readonly"]:hover,
+input:disabled:hover,
+input[readonly]:hover,
+textarea:disabled:hover,
+textarea[readonly]:hover,
+textarea[readonly="readonly"]:hover,
+select:disabled:hover,
+input[readonly="readonly"]:focus,
+input:disabled:focus,
+input[readonly]:focus,
+textarea:disabled:focus,
+textarea[readonly]:focus,
+textarea[readonly="readonly"]:focus,
+select:disabled:focus {
+  box-shadow: none;
+}
+
+/*placeholders*/
+input[readonly="readonly"]::placeholder,
+input:disabled::placeholder,
+input[readonly]::placeholder,
+textarea:disabled::placeholder,
+textarea[readonly="readonly"]::placeholder,
+textarea[readonly]::placeholder,
+select:disabled::placeholder {
+  color: var(--mt-form-disabled-placeholder-color);
+}

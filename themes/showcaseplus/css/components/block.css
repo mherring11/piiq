@@ -1,0 +1,7 @@
+/**
+ * @file
+ * Visual styles for Showcase+'s blocks.
+ */
+.sidebar__section .block {
+  padding-bottom: 70px;
+}

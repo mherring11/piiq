@@ -1,0 +1,35 @@
+/**
+ * @file
+ * Visual styles for mt_highlight paragraphs type in Base+.
+ */
+/*view modes: teaser, default*/
+.paragraph--view-mode--mt-teaser .field--name-field-mt-highlight-title,
+.paragraph--view-mode--default .field--name-field-mt-highlight-title {
+  font-weight: 300;
+}
+@media (min-width: 992px) {
+  .paragraph--view-mode--mt-teaser .field--name-field-mt-highlight-title,
+  .paragraph--view-mode--default .field--name-field-mt-highlight-title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 991px) {
+  .paragraph--view-mode--mt-teaser .field--name-field-mt-highlight-body,
+  .paragraph--view-mode--default .field--name-field-mt-highlight-body {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .paragraph--view-mode--mt-teaser .field--name-field-mt-highlight-title,
+  .paragraph--view-mode--default .field--name-field-mt-highlight-title {
+    padding-bottom: 0;
+  }
+}
+
+/*view modes: teaser-tile */
+.paragraph--view-mode--mt-teaser-tile.paragraph--type--mt-highlight .field--name-field-mt-highlight-title {
+  font-size: 18px;
+}
+.paragraph--view-mode--mt-teaser-tile.paragraph--type--mt-highlight .field--name-field-mt-highlight-image {
+  box-shadow: none;
+}

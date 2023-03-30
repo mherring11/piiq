@@ -1,0 +1,19 @@
+<?php
+
+
+/**
+ * Implements hook_theme().
+ */
+function gmv_theme() {
+  return [
+    'gmv_image_formatter' => [
+      'variables' => [
+        'uri' => NULL,
+        'camera' => NULL,
+        'touch_action' => NULL,
+        'shadow' => NULL,
+        'skybox_image' => NULL,
+      ],
+    ],
+  ];
+}
