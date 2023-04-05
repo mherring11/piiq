@@ -35,13 +35,13 @@ container3D.appendChild(renderer.domElement);
 camera.position.z = 135;
 
 // resize canvas on resize window
-/* window.addEventListener( 'resize', () => {
-	let width = window.innerWidth
-	let height = window.innerHeight
-	renderer.setSize( width, height )
-	camera.aspect = width / height
-	camera.updateProjectionMatrix()
-}) */
+window.addEventListener("resize", () => {
+  let width = window.innerWidth;
+  let height = window.innerHeight;
+  renderer.setSize(width, height);
+  camera.aspect = width / height;
+  camera.updateProjectionMatrix();
+});
 
 // ambient light
 var ambientLight = new THREE.AmbientLight(0xffffff, 2);
@@ -64,8 +64,8 @@ function onDocumentMouseMove(event) {
 
 function animate() {
   requestAnimationFrame(animate);
-//   cube.rotation.x += 0.04;
-//   cube.rotation.y += 0.04;
+  //   cube.rotation.x += 0.04;
+  //   cube.rotation.y += 0.04;
   // wireframeCube.rotation.x -= 0.01;
   // wireframeCube.rotation.y -= 0.01;
   scene.rotation.y += mouseX * 0.02;
