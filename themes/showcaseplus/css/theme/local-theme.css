@@ -2,3 +2,6 @@ canvas {
   width: 700px !important;
   /* height: 100px !important; */
 }
+.messages--error{
+  display: none;
+}
